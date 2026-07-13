@@ -51,3 +51,29 @@ streamlit run app.py
 # Jupyter Notebooks
 jupyter notebook notebooks/
 
+Deploying on Streamlit Cloud
+----------------------------
+
+1. Ensure the repository contains `app.py` at the repository root, `requirements.txt`, and the model files (`best_model.pkl`, `scaler.pkl`).
+2. Push the repository to GitHub:
+
+    git add .
+    git commit -m "Add Streamlit app and model files"
+    git push origin main
+
+3. Go to https://streamlit.io/cloud, sign in with GitHub, and click **New app**.
+    - Select the repository and branch.
+    - Set the **Main file** to `app.py` and click **Deploy**.
+
+Local Run
+---------
+
+Run the app locally with:
+
+```
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+If you want me to push this repo to GitHub or create additional deployment artifacts (Dockerfile, Procfile), tell me which option you prefer.
+
